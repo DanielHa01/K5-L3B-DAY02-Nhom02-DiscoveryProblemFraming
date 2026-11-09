@@ -6,10 +6,10 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Nguyễn Thiên Long
+- MSSV: 2A202604095
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
+- Tên nhóm: Nhóm 02
 - Link repo nhóm:
 
 ---
