@@ -20,7 +20,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 |Việc làm / Tuyển dụng |Khi đi tìm việc hoặc nộp hồ sơ thực tập, tôi muốn tự động điều chỉnh và tối ưu hóa nội dung CV của mình sao cho khớp với các từ khóa (keywords) trong bản mô tả công việc (JD), để không phải sửa thủ công từng dòng cho mỗi công ty. |Sinh viên năm cuối, người tìm việc |Mất 25–30 phút cho mỗi bộ CV/Cover Letter nộp đơn để rà soát và chỉnh sửa lại câu chữ. |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
