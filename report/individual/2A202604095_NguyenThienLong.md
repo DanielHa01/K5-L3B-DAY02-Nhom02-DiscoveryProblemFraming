@@ -49,11 +49,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
+| Job Story | Khi chuẩn bị thi học kỳ mà tài liệu môn học là tập hợp 5–10 file slide PDF hàng trăm trang, tôi muốn đặt câu hỏi bằng văn bản tự nhiên để AI chỉ rõ vị trí thông tin kèm giải thích ngắn, để không phải mò mẫm lật từng slide.|
+| Actor | Bản thân sinh viên ôn thi cuối kỳ các môn lý thuyết nặng.|
+| Thời điểm / bối cảnh | Khi ôn tập chuẩn bị thi cuối kỳ hoặc cần tra cứu lại một khái niệm/công thức cụ thể trong lúc làm bài tập.|
+| Quy trình hiện tại (3–7 bước) | 1. Mở file PDF slide môn học trên máy tính. 2. Nhấn Ctrl+F gõ từ khóa. 3. Lật qua lật lại hàng chục trang kết quả. 4. Đọc thủ công từng slide để tìm đoạn giải thích phù hợp. 5. Ghi chú lại vào sổ/file cá nhân.|
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3 & 4 (Lật từng slide và đọc thủ công) — Mất khoảng 20–30 phút cho mỗi lần tra cứu một định nghĩa hoặc khái niệm phức tạp.|
 | Impact (nếu không giải thì sao) | |
 | Success metric (baseline → target) | |
 | Phương án không dùng AI | |
