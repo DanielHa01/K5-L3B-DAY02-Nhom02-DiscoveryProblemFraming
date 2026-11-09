@@ -20,11 +20,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Học tập / Hỏi đáp slide bài giảng | Khi chuẩn bị thi học kỳ mà tài liệu môn học là tập hợp 5–10 file slide PDF hàng trăm trang, tôi muốn đặt câu hỏi bằng văn bản tự nhiên để AI chỉ rõ vị trí thông tin kèm giải thích ngắn, để không phải mò mẫm lật từng slide.| Sinh viên ôn thi cuối kỳ các môn lý thuyết| Mất 20–30 phút mỗi lần lật từng slide để tìm lại một định nghĩa hoặc khái niệm.|
-| 2 | Sức khỏe & Thể lực / Tập luyện tại nhà| Khi muốn tự tập thể dục hoặc tập gym tại nhà mà không có HLV hướng dẫn riêng, tôi muốn chụp ảnh hoặc mô tả dụng cụ có sẵn (tạ đơn, dây kháng lực, ghế) để hệ thống tự động thiết kế lộ trình tập luyện ngắn trong ngày, để không phải mất thời gian tìm kiếm các video bài tập rời rạc trên mạng.| Người tự tập thể dục tại nhà| Mất 15–20 phút mở YouTube tìm bài tập và hay bị nản giữa chừng vì lịch tập không đồng bộ.|
-| 3 | Học tập / Quản lý đồ án & Nhóm học phần| Khi nhận một đề tài đồ án lớn từ giảng viên kèm theo danh sách các yêu cầu và tài liệu dài dằng dặc, tôi muốn hệ thống tự động bóc tách thành các mốc thời gian (milestones) và danh sách công việc nhỏ theo từng tuần, để nhóm không bị dồn việc vào sát ngày deadline.| Sinh viên làm đồ án tốt nghiệp, bài tập lớn nhóm.| Các thành viên trong nhóm thường xuyên cãi nhau hoặc bối rối vì không biết tuần này phải nộp cái gì, ai chịu trách nhiệm phần nào, không giám sát dc thành viên trong nhóm có làm việc hay không|
-| 4 | Ngoại ngữ / Luyện dịch thuật ngữ| Khi đọc các bài báo chuyên ngành tiếng Anh để làm đồ án, tôi muốn dán đoạn văn vào để tự động bóc tách các cụm thuật ngữ quan trọng kèm câu ví dụ thực tế, để không phải vừa đọc vừa dùng Google Translate dịch từng từ rời rạc.| Sinh viên làm đồ án, đọc tài liệu chuyên ngành| Mất hơn 40 phút cho một trang tài liệu tiếng Anh vì ngắt quãng tra từ quá nhiều.|
-| 5 | Đời sống / Tìm phòng trọ| Khi tìm phòng trọ mới trên các hội nhóm Facebook, tôi muốn tự động lọc các bài đăng theo tiêu chí (giá tiền, khu vực, có ban công/điều hòa) và loại bỏ bài đăng của môi giới/cò đất, để không mất thời gian nhắn tin hỏi nhầm.| Sinh viên cần chuyển phòng trọ| Tốn hàng giờ lướt feed Facebook và nhắn tin 10 chủ bài thì 8 người là môi giới dẫn dắt.|
+| 1 | Tìm thông tin trong bài giảng | Khi chuẩn bị thi học kỳ mà tài liệu môn học là tập hợp 5–10 file slide PDF hàng trăm trang, tôi muốn đặt câu hỏi bằng văn bản tự nhiên để AI chỉ rõ vị trí thông tin kèm giải thích ngắn, để không phải mò mẫm lật từng slide.| Sinh viên ôn thi cuối kỳ các môn lý thuyết| Mất 20–30 phút mỗi lần lật từng slide để tìm lại một định nghĩa hoặc khái niệm.|
+| 2 | Tập luyện tại nhà| Khi muốn tự tập thể dục hoặc tập gym tại nhà mà không có HLV hướng dẫn riêng, tôi muốn chụp ảnh hoặc mô tả dụng cụ có sẵn (tạ đơn, dây kháng lực, ghế) để hệ thống tự động thiết kế lộ trình tập luyện ngắn trong ngày, để không phải mất thời gian tìm kiếm các video bài tập rời rạc trên mạng.| Người tự tập thể dục tại nhà| Mất 15–20 phút mở YouTube tìm bài tập và hay bị nản giữa chừng vì lịch tập không đồng bộ.|
+| 3 | Quản lý làm việc nhóm| Khi nhận một đề tài đồ án lớn từ giảng viên kèm theo danh sách các yêu cầu và tài liệu dài dằng dặc, tôi muốn hệ thống tự động bóc tách thành các mốc thời gian (milestones) và danh sách công việc nhỏ theo từng tuần, để nhóm không bị dồn việc vào sát ngày deadline.| Sinh viên làm đồ án tốt nghiệp, bài tập lớn nhóm.| Các thành viên trong nhóm thường xuyên cãi nhau hoặc bối rối vì không biết tuần này phải nộp cái gì, ai chịu trách nhiệm phần nào, không giám sát dc thành viên trong nhóm có làm việc hay không|
+| 4 | Tìm thuật ngữ tiếng Anh| Khi đọc các bài báo chuyên ngành tiếng Anh để làm đồ án, tôi muốn dán đoạn văn vào để tự động bóc tách các cụm thuật ngữ quan trọng kèm câu ví dụ thực tế, để không phải vừa đọc vừa dùng Google Translate dịch từng từ rời rạc.| Sinh viên làm đồ án, đọc tài liệu chuyên ngành| Mất hơn 40 phút cho một trang tài liệu tiếng Anh vì ngắt quãng tra từ quá nhiều.|
+| 5 | Tìm phòng trọ| Khi tìm phòng trọ mới trên các hội nhóm Facebook, tôi muốn tự động lọc các bài đăng theo tiêu chí (giá tiền, khu vực, có ban công/điều hòa) và loại bỏ bài đăng của môi giới/cò đất, để không mất thời gian nhắn tin hỏi nhầm.| Sinh viên cần chuyển phòng trọ| Tốn hàng giờ lướt feed Facebook và nhắn tin 10 chủ bài thì 8 người là môi giới dẫn dắt.|
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
@@ -41,9 +41,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 |Tìm thông tin trong bài giảng PDF (# 1) | Không mất thời gian tìm đúng cị trí nội dung cần, tránh việc Ctrl + F ra nhiều kết quả | AI có trích xuất chính xác vị trí số trang và ngữ cảnh chuẩn xác không, hay bị nói nhảm (hallucination)?|
+| 2 |Lọc và bóc tách thuật ngữ chuyên ngành tiếng Anh (#4) | Giúp tăng tốc độ đọc hiểu báo cáo khoa học và tài liệu tham khảo khi làm đồ án tốt nghiệp| AI có phân biệt được thuật ngữ chuyên ngành với từ vựng thông dụng trong ngữ cảnh cụ thể không?|
+| 3 | Tự động tìm kiếm và lọc phòng trọ trên Facebook| Giải quyết nhu cầu thiết thực của sinh viên khi đi tìm phòng, giúp lọc sạch các bài đăng môi giới/cò đất ảo.| Các bài đăng trên Facebook có chứa đủ thông tin để AI lọc chính xác tiêu chí giá và tiện ích không?|
 
 ### Problem Card #1
 
