@@ -155,16 +155,16 @@ HIỆN TẠI — 50 phút/PR
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch Problem Card #1 "Giải quyết xung đột Git merge conflict khi làm việc nhóm" (bottleneck ở bước đọc hiểu code 2 bên và chat hỏi ý đồ logic mất ~25 phút; tổng 50 phút/lần) | Card được nhóm đánh giá cao về tính thực tế và đau đớn, lọt vào shortlist và được chọn làm Candidate Problem chính của nhóm |
+| Phản biện bài của bạn khác | Đặt câu hỏi  về bài toán COD: "Quy trình đối soát COD phần lớn là đối chiếu bảng tính, liệu dùng công thức Excel/Power Query có giải quyết được 80% không, việc dùng AI ở đây có khả thi và thật sự cần thiết không?" | Bạn thừa nhận phần lớn giải được bằng Rule, nhóm nhận ra không nên vội vã dùng AI cho bài toán thuần bảng tính và hướng sự tập trung vào bài toán có độ mơ hồ cao hơn |
+| Nhận phản biện | Nhận câu hỏi : "Cách AI sẽ can thiệp vào quy trình fix conflict như thế nào? Liệu có an toàn không nếu AI tự động gộp code làm vỡ logic? Tại sao không dùng quy tắc workflow đơn giản mà phải nghĩ đến multi-agent?" | Tôi đã sửa thiết kế giải pháp: Chấp nhận phương án không để AI tự trị hoàn toàn; thiết lập ranh giới cứng (Boundary) là AI chỉ phân tích AST/ngữ cảnh và gợi ý code, lập trình viên bắt buộc phải duyệt (HITL) và chạy unit test trước khi merge |
+| Gom cluster / cây OST | Cùng nhóm phân loại 12 candidate thành 3 nhóm lớn: A (Quy trình cộng tác & lập trình nhóm - Git conflict), B (Đối soát dữ liệu & tài chính), C (Tra cứu & trích xuất tri thức tài liệu). Tham gia dựng cây Opportunity Solution Tree (OST) | Xác định rõ Outcome của nhóm là: "Giảm thời gian xử lý xung đột và rủi ro hỏng build khi cộng tác code trong sprint" |
+| Chọn candidate problem | Cùng nhóm chấm điểm bảng ma trận shortlist (1–5) theo 7 tiêu chí; bảo vệ tính cấp thiết và khả năng đo lường của bài toán Git Merge Conflict | Bài toán Git Merge Conflict đạt điểm cao nhất (actor rõ, quy trình rõ, pain thật, impact đo được) và được nhóm chọn 100% |
+| Kiểm chứng / research | Xây dựng Assumption Map (tập trung vào rủi ro Usability: dev có tin tưởng và hiểu code AI gợi ý không); phỏng vấn nhanh 2 bạn dev lớp khác; tìm hiểu các tool thị trường (GitHub Copilot diff, GitKraken, Sourcery) | Nhóm nhận ra các tool hiện có chỉ gợi ý cú pháp tại chỗ nhưng không hiểu ngữ cảnh commit history của 2 nhánh và thiếu bước tự động chạy test kiểm chứng logic |
+| Quy trình nhóm | Trực tiếp phác thảo và chuẩn hóa sơ đồ quy trình Hiện tại (Before: 50 phút) và quy trình Tương lai (After: 15 phút), phân định rõ từng bước Rule, AI, và Con người | Định hình rõ ràng handoff giữa các bước và phương án quay về (fallback: quay về 3-way merge thủ công nếu gợi ý AI không vượt qua unit test) |
+| Problem Statement | Dự thảo Problem Statement v0 với 6 trường; tiếp thu ý kiến phản biện của nhóm để nâng cấp lên v1 (bổ sung AI intervention point, boundary nghiêm ngặt và 3 tiêu chí eval đánh giá đầu ra của AI) | Bản Problem Statement v1 của nhóm có ranh giới rõ ràng, không bị lẫn giải pháp vào problem |
+| Mức can thiệp AI | Tham gia tranh luận về việc chọn mức Workflow hay Agent; phân tích ma trận độ mơ hồ × độ phức tạp cho bài toán code conflict | Thuyết phục nhóm chọn mức Workflow trước thay vì vội vã làm Multi-Agent tự trị phức tạp; xác định rõ chỉ dùng Agent khi cần tự động gọi test runner lặp lại nhiều vòng |
+| Quyết định | Cùng nhóm đánh giá 4 rủi ro cốt lõi (Value, Usability, Feasibility, Viability); đề xuất quyết định và ngưỡng dừng | Thống nhất quyết định: **Not Yet** (hoặc Go có điều kiện pilot hẹp trên 1 repository nội bộ): cần đo baseline thời gian thật trên 10 ca conflict và kiểm chứng độ chính xác của prompt phân tích AST trước khi xây dựng hệ thống hoàn chỉnh |
 
 ---
 
@@ -172,12 +172,12 @@ HIỆN TẠI — 50 phút/PR
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| **CP1 Scan** | Gợi ý thêm các pain points trong quá trình làm việc nhóm và lập trình bài lab | Gợi ý góc nhìn về việc trích xuất spec yêu cầu từ đề bài lab dài và sinh unit test edge cases (ý #9, #10) | Đưa ra các ý tưởng quá chung chung, sáo rỗng như "Trợ lý AI quản lý toàn diện dự án", "Chatbot trả lời lỗi lập trình chung" (không có quy trình cụ thể) | Loại bỏ các ý viển vông; chỉ giữ lại 2 ý có quy trình rõ, viết lại hoàn toàn theo chuẩn Job Story gắn với số liệu đau đớn thật của bản thân |
+| **CP2 Problem Card** | Đóng vai lập trình viên senior hoài nghi để phản biện Card #1 (Merge Conflict) | Chỉ ra điểm yếu: baseline 50 phút có thể bị phóng đại với conflict dòng đơn; cảnh báo nguy cơ dev lười suy nghĩ nếu AI tự resolve | Đề xuất giải pháp cực đoan: "để AI tự resolve và commit luôn để tiết kiệm thời gian tối đa" | Bác bỏ đề xuất tự động hoàn toàn; thiết lập ranh giới cứng (Boundary): AI chỉ gợi ý kèm giải thích ngữ cảnh, developer bắt buộc phải review và chạy unit test (Human-in-the-loop) |
+| **CP4 Research** | Tìm kiếm các giải pháp, công cụ và pattern hiện có giải quyết Git merge conflict bằng AI | Liệt kê nhanh các công cụ thị trường (GitKraken Merge Tool, GitHub Copilot, Sourcery) và nguyên lý 3-way merge | Đưa ra một số link tài liệu giả định/không tồn tại, phóng đại khả năng giải quyết conflict đạt 95% mà không có nguồn kiểm chứng | Tự tìm đọc tài liệu GitHub Docs, kiểm tra thực tế tính năng Copilot in VS Code và ghi nhận rõ hạn chế: AI hiện tại rất hay bị ảo giác ngữ cảnh nếu conflict giữa nhiều hàm phụ thuộc |
+| **CP5 Quy trình** | Chuyển đổi mô tả quy trình dạng text sang sơ đồ quy trình dạng text trực quan | Định dạng sơ đồ nhanh, trực quan, phân chia luồng rõ ràng | Tự ý gộp bước "đọc hiểu code 2 bên" và "chạy test local" thành một bước, làm mờ đi nút thắt bottleneck chính | Tách bạch từng bước thành: [1. Script phát hiện] -> [2. AI phân tích AST/Context] -> [3. AI đề xuất] -> [4. Dev review & chọn] -> [5. Chạy test tự động]; giữ nguyên bottleneck ở bước đối chiếu logic |
+| **CP5–6 Problem Statement** | Rà soát Problem Statement v0 để phát hiện từ ngữ chứa giải pháp (solution bias) | Soi ra chỗ tôi vô tình viết "cần một công cụ AI multi-agent..." vào phần mô tả quy trình | Phản biện hời hợt ở phần Success metric, khen ngợi chung chung thay vì chỉ ra cách đo lường cụ thể | Sửa lại hoàn toàn ngôn ngữ trung tính mô tả vấn đề thuần túy; bổ sung công thức đo Success Metric (baseline đo bằng bấm giờ, target giảm thời gian, giữ tỷ lệ hỏng build = 0) |
+| **CP6 Mức can thiệp / quyết định** | So sánh ưu/nhược điểm giữa Workflow và Multi-Agent cho bài toán resolve conflict | Phân tích rõ ràng: Workflow phù hợp cho quy trình tuyến tính, Agent phù hợp khi cần tự động gọi công cụ (linter, compiler, test runner) lặp lại | Quá thiên vị Agent, khuyên nên xây hệ thống đa tác tử phức tạp ngay lập tức mà bỏ qua chi phí và rủi ro hallucination | Giữ lập trường thực tế: Ưu tiên thiết kế mức Workflow kiểm soát chặt chẽ trước; chỉ nâng lên Agent cho bước tự động chạy test và sửa lỗi vòng lặp nếu có đủ dữ liệu kiểm chứng |
 
 ---
 
@@ -186,21 +186,27 @@ HIỆN TẠI — 50 phút/PR
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Tôi đã học được cách xác định phương pháp phân tích cách giới hạn Ai để chúng có thể thật sự làm việc theo đúng yêu và giải quyết đúng vấn đề.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Tôi có đổi ý. Ban đầu tôi định để Ai tự động hoàn toàn nhưng sau đó nhóm khiến tôi thay đổi ý kiến sang ai cần có sự giám sát, giới hạn trong quyền quyết định sửa, phạm vi sửa.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó khăn và tốn nhiều công sức nhất khi chắp bút viết Problem Statement chính là việc định lượng Success Metric và thiết lập ranh giới an toàn.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu có cơ hội thực hiện lại bài lab này từ đầu, điều đầu tiên tôi sẽ thay đổi là chuẩn bị sẵn dữ liệu thực nghiệm trước buổi học: tôi sẽ trích xuất lịch sử git log của ít nhất 5–10 ca merge conflict phức tạp từ các đồ án lập trình kỳ trước. Việc có sẵn tập dữ liệu thật (ground truth) ngay từ đầu sẽ giúp nhóm không phải mất thời gian tranh cãi dựa trên những con số ước lượng cảm tính.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán của nhóm là sinh viên lập trình tốn trung bình 50 phút mỗi lần xử lý Git merge conflict phức tạp khi làm việc nhóm, dễ gây mất code logic và hỏng build repo. Quy trình giải quyết gồm phát hiện conflict bằng script, trích xuất AST và ngữ cảnh commit của hai nhánh, AI phân tích ý đồ logic và gợi ý đoạn code hợp nhất, developer trực tiếp review xác nhận và cuối cùng hệ thống tự động chạy linter kèm unit test trước khi merge. Metric cốt lõi là giảm thời gian xử lý một ca conflict từ 50 phút xuống dưới 15 phút, đồng thời giữ tỷ lệ lỗi logic và hỏng build sau merge ở mức bằng 0. Boundary bắt buộc là AI chỉ đóng vai trò phân tích ngữ cảnh và đề xuất phương án, tuyệt đối không được tự động commit hay push code lên remote repository mà phải có sự xác nhận của developer (Human-in-the-loop). Về mức can thiệp, nhóm xác định lựa chọn mức Workflow (các bước thực thi tuần tự được định sẵn bằng code, AI can thiệp ở khâu hiểu ngữ nghĩa), từ chối mức Agent tự trị để loại trừ rủi ro ảo giác và độ phức tạp không cần thiết. Quyết định cuối cùng của nhóm là **Not Yet**: nhóm cần tiến hành đo lường baseline thời gian trên 10 ca conflict thật và kiểm chứng độ chính xác của prompt phân tích diff trên pilot hẹp trước khi chính thức phát triển thành công cụ mở rộng.
 
 ---
 
 ## 7. Tài liệu tham khảo
-
--
+- **Tài liệu bài giảng môn học**: Bộ slide và worksheet hướng dẫn Discovery & Problem Framing (Day 02), Học viện/Trường Đại học VinUniversity.
+- **Biên bản thảo luận và phản biện nội bộ**: Nhóm 02 (các thành viên Hà Phan Đại Dương, Lê Bá Nguyên, Nguyễn Thiên Long, Nguyễn Ngọc Bách, Nguyễn Văn Tuấn).
