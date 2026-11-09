@@ -54,10 +54,10 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Thời điểm / bối cảnh | Khi ôn tập chuẩn bị thi cuối kỳ hoặc cần tra cứu lại một khái niệm/công thức cụ thể trong lúc làm bài tập.|
 | Quy trình hiện tại (3–7 bước) | 1. Mở file PDF slide môn học trên máy tính. 2. Nhấn Ctrl+F gõ từ khóa. 3. Lật qua lật lại hàng chục trang kết quả. 4. Đọc thủ công từng slide để tìm đoạn giải thích phù hợp. 5. Ghi chú lại vào sổ/file cá nhân.|
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3 & 4 (Lật từng slide và đọc thủ công) — Mất khoảng 20–30 phút cho mỗi lần tra cứu một định nghĩa hoặc khái niệm phức tạp.|
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
+| Impact (nếu không giải thì sao) | Tốn nhiều thời gian, làm gián đoạn luồng tư duy ôn tập, dễ gây nản lòng và quá tải trước khối lượng tài liệu lớn.|
+| Success metric (baseline → target) | Giảm thời gian tra cứu từ 20–30 phút xuống dưới 3 phút cho mỗi câu hỏi.|
+| Phương án không dùng AI | Dùng tính năng tìm kiếm Ctrl+F của ứng dụng đọc PDF: Chỉ tìm được đúng từ khóa chính xác, không trả lời được các câu hỏi mang tính tổng hợp hoặc giải thích ý nghĩa.|
+| Giả thuyết về AI (nếu có) | AI đọc nội dung file PDF slide, nhận diện câu hỏi bằng ngôn ngữ tự nhiên và trả lời chính xác thông tin kèm trích dẫn số trang cụ thể.|
 | Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
 
 Quy trình nháp hiện tại:
@@ -70,15 +70,15 @@ Quy trình nháp hiện tại:
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
+| Job Story |  Khi đọc các bài báo khoa học hoặc tài liệu kỹ thuật tiếng Anh dài để làm đồ án, tôi muốn dán đoạn văn vào hệ thống để tự động bóc tách các cụm thuật ngữ chuyên ngành kèm câu ví dụ thực tế, để không phải vừa đọc vừa dùng Google Translate dịch từng từ rời rạc.|
+| Actor | Sinh viên cần tham khảo tài liệu nước ngoài|
+| Thời điểm / bối cảnh | Trong quá trình thu thập tài liệu và viết báo cáo đồ án tốt nghiệp|
+| Quy trình hiện tại (3–7 bước) | 1. Mở file PDF bài báo tiếng Anh. 2. Copy đoạn văn không hiểu sang Google Translate. 3. Đọc bản dịch thô đôi khi không chuẩn ngữ cảnh kỹ thuật. 4. Mở thêm từ điển chuyên ngành để tra lại từng từ. 5. Tự tổng hợp lại vào file ghi chú.|
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2, 3 & 4 (Vừa đọc vừa tra từ điển rời rạc) — Mất hơn 40 phút cho mỗi trang tài liệu tiếng Anh vì bị ngắt quãng liên tục.|
+| Impact (nếu không giải thì sao) | Tốc độ đọc tài liệu rất chậm, dễ nản chí, làm chậm tiến độ hoàn thành chương tổng quan tài liệu của đồ án.|
+| Success metric (baseline → target) | Giảm thời gian xử lý và hiểu một trang tài liệu từ 40 phút xuống dưới 10 phút.|
+| Phương án không dùng AI | Dùng Google Translate hoặc từ điển Anh-Việt thông thường: Phải tra từng từ một, không hiểu được nghĩa theo đúng ngữ cảnh chuyên ngành kỹ thuật.|
+| Giả thuyết về AI (nếu có) | AI hiểu ngữ cảnh kỹ thuật, lọc ra đúng các cụm thuật ngữ khó và giải thích ngắn gọn, dễ hiểu bằng tiếng Việt.|
 | Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
 
 Quy trình nháp hiện tại:
@@ -91,15 +91,15 @@ Quy trình nháp hiện tại:
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
+| Job Story | Khi tìm phòng trọ mới trên các hội nhóm Facebook, tôi muốn tự động lọc các bài đăng theo tiêu chí cụ thể (giá tiền, khu vực, có ban công/điều hòa) và loại bỏ bài đăng của môi giới/cò đất, để không mất thời gian nhắn tin hỏi nhầm.|
+| Actor | Người có nhu cầu chuyển trọ, tìm trọ|
+| Thời điểm / bối cảnh | Trước thời điểm bắt đầu học kỳ mới hoặc khi cần đổi chỗ ở.|
+| Quy trình hiện tại (3–7 bước) | 1. Lướt feed các hội nhóm cho thuê phòng trọ trên Facebook. 2. Đọc lướt từng bài viết để xem giá và địa chỉ. 3. Nhắn tin hỏi chủ bài xem còn phòng trống không hoặc giá chuẩn là bao nhiêu. 4. Phát hiện ra bài đăng cũ hoặc do môi giới đăng ảo câu khách.|
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2, 3 & 4 (Lướt tìm và nhắn nhầm môi giới) — Tốn hàng giờ đồng hồ lướt mạng xã hội mỗi ngày nhưng tỷ lệ tìm được phòng thực tế rất thấp.|
+| Impact (nếu không giải thì sao) | Mất rất nhiều thời gian vô ích, dễ bị lừa đảo hoặc gặp thông tin giá ảo, gây ức chế tâm lý.|
+| Success metric (baseline → target) | Tiết kiệm thời gian tìm kiếm từ 2 giờ/ngày xuống dưới 20 phút bằng danh sách lọc sẵn.|
+| Phương án không dùng AI | Dùng thanh tìm kiếm từ khóa trên Facebook: Kết quả trả về thường lẫn lộn nhiều bài cũ, bài trùng lặp và quảng cáo của môi giới.|
+| Giả thuyết về AI (nếu có) | AI đọc nội dung các bài đăng trong group, tự động trích xuất đúng mức giá, diện tích, vị trí và gắn nhãn cảnh báo bài của môi giới.|
 | Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
 
 Quy trình nháp hiện tại:
