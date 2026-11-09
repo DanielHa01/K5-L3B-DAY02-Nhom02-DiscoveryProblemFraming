@@ -58,12 +58,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Success metric (baseline → target) | Giảm thời gian tra cứu từ 20–30 phút xuống dưới 3 phút cho mỗi câu hỏi.|
 | Phương án không dùng AI | Dùng tính năng tìm kiếm Ctrl+F của ứng dụng đọc PDF: Chỉ tìm được đúng từ khóa chính xác, không trả lời được các câu hỏi mang tính tổng hợp hoặc giải thích ý nghĩa.|
 | Giả thuyết về AI (nếu có) | AI đọc nội dung file PDF slide, nhận diện câu hỏi bằng ngôn ngữ tự nhiên và trả lời chính xác thông tin kèm trích dẫn số trang cụ thể.|
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Cảm nhận nhanh | Workflow  |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+1. Mở file PDF slide môn học trên máy tính. 2. Nhấn Ctrl+F gõ từ khóa. 3. Lật qua lật lại hàng chục trang kết quả. 4. Đọc thủ công từng slide để tìm đoạn giải thích phù hợp. 5. Ghi chú lại vào sổ/file cá nhân.
 ```
 
 ### Problem Card #2
@@ -79,12 +79,12 @@ Quy trình nháp hiện tại:
 | Success metric (baseline → target) | Giảm thời gian xử lý và hiểu một trang tài liệu từ 40 phút xuống dưới 10 phút.|
 | Phương án không dùng AI | Dùng Google Translate hoặc từ điển Anh-Việt thông thường: Phải tra từng từ một, không hiểu được nghĩa theo đúng ngữ cảnh chuyên ngành kỹ thuật.|
 | Giả thuyết về AI (nếu có) | AI hiểu ngữ cảnh kỹ thuật, lọc ra đúng các cụm thuật ngữ khó và giải thích ngắn gọn, dễ hiểu bằng tiếng Việt.|
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Cảm nhận nhanh |  Workflow  |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+1. Mở file PDF bài báo tiếng Anh. 2. Copy đoạn văn không hiểu sang Google Translate. 3. Đọc bản dịch thô đôi khi không chuẩn ngữ cảnh kỹ thuật. 4. Mở thêm từ điển chuyên ngành để tra lại từng từ. 5. Tự tổng hợp lại vào file ghi chú.
 ```
 
 ### Problem Card #3
@@ -100,26 +100,26 @@ Quy trình nháp hiện tại:
 | Success metric (baseline → target) | Tiết kiệm thời gian tìm kiếm từ 2 giờ/ngày xuống dưới 20 phút bằng danh sách lọc sẵn.|
 | Phương án không dùng AI | Dùng thanh tìm kiếm từ khóa trên Facebook: Kết quả trả về thường lẫn lộn nhiều bài cũ, bài trùng lặp và quảng cáo của môi giới.|
 | Giả thuyết về AI (nếu có) | AI đọc nội dung các bài đăng trong group, tự động trích xuất đúng mức giá, diện tích, vị trí và gắn nhãn cảnh báo bài của môi giới.|
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Cảm nhận nhanh | Workflow  |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+1. Lướt feed các hội nhóm cho thuê phòng trọ trên Facebook. 2. Đọc lướt từng bài viết để xem giá và địa chỉ. 3. Nhắn tin hỏi chủ bài xem còn phòng trống không hoặc giá chuẩn là bao nhiêu. 4. Phát hiện ra bài đăng cũ hoặc do môi giới đăng ảo câu khách.
 ```
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
+- Card số: Card #2 (Lọc và bóc tách thuật ngữ chuyên ngành tiếng Anh khi đọc tài liệu làm đồ án)
+- Vì sao: Đỡ mất nhiều thời gian khi vừa phải tìm cụm từ và dịch nó sang tiếng anh và tìm thêm 1 công đoạn nữa thì mới hiểu dc cách dùng từ đấy trong đúng ngũ cảnh, đỡ bị dùng sai 
 - Câu hỏi muốn nhóm phản biện:
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
-
+| Tài liệu chuyên ngành kỹ thuật thường có các công thức toán học và ký hiệu đặc biệt mà AI dễ dịch nhầm.| Đồng ý| Xác định rõ phạm vi (boundary): Chỉ tập trung bóc tách các cụm danh từ, thuật ngữ chuyên ngành kỹ thuật ở dạng đoạn văn bản thuần túy, không xử lý các công thức phức tạp trong ảnh.|
+| Đề xuất mở rộng thành một hệ thống dịch toàn bộ toàn văn bài báo khoa học dài 50 trang sang tiếng Việt.| Không đồng ý| Giữ nguyên ranh giới cốt lõi: "AI chỉ đóng vai trò bóc tách nhanh các cụm thuật ngữ cốt lõi và giải thích theo ngữ cảnh, sinh viên vẫn giữ quyền kiểm soát việc đọc hiểu toàn văn."|
 ---
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
