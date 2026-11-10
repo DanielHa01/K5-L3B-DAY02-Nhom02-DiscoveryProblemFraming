@@ -126,16 +126,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày 3 problem cards cá nhân tập trung vào vấn đề tra cứu, đặc biệt nhấn mạnh Card #2 (bóc tách thuật ngữ chuyên ngành tiếng Anh).| Cung cấp cho nhóm góc nhìn về các nỗi đau liên quan đến việc xử lý thông tin phi cấu trúc và khó khăn về rào cản ngôn ngữ.|
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Bài toán Git merge conflict có thực sự là pain lớn không khi các IDE như VSCode hiện nay đã hỗ trợ giao diện merge rất trực quan?| Giúp tác giả (bạn Tuấn) làm rõ và khoanh vùng lại rằng: IDE chỉ hỗ trợ UI, còn bottleneck thực sự nằm ở việc "đọc hiểu logic" của nhánh code lạ.|
+| Nhận phản biện | Câu hỏi tôi nhận được: "Nguồn dữ liệu có đủ cấu trúc để lọc không?", "Tiêu chí để đánh giá AI làm đúng hay sai đối với bài toán lọc thông tin là gì?"| Tôi đã sửa gì: Nhận ra giới hạn về nguồn dữ liệu và độ khó trong việc đo lường (success metric) của bài toán cá nhân, từ đó đồng ý hạ độ ưu tiên của các candidate này.|
+| Gom cluster / cây OST | Cùng nhóm nhóm các ý tưởng lại. Các ý tưởng của tôi được xếp vào Cluster C (Tra cứu và yêu cầu).| Giúp nhóm nhận diện pattern chung của cụm ý tưởng là "tìm, lọc thông tin không đồng nhất" để dễ dàng so sánh và đánh giá với các cụm khác.|
+| Chọn candidate problem | Tham gia chấm điểm các candidate theo 7 tiêu chí. Thống nhất loại Cluster C của mình để ủng hộ ý tưởng "Git merge conflict" của Nguyễn Văn Tuấn.| Nhóm chốt được 1 Candidate Problem duy nhất có tính khả thi cao, có Actor, Workflow và Bottleneck rõ ràng để đi tiếp.|
+| Kiểm chứng / research | Tìm hiểu về quy trình resolve conflict hiện tại của các developer và giới hạn của các công cụ No-AI (merge thủ công).| Củng cố bằng chứng và dữ liệu cho thấy việc đọc hiểu code lạ khi conflict gây mất rất nhiều thời gian, làm gián đoạn flow làm việc.|
+| Quy trình nhóm | Đóng góp vào việc phác thảo Current Workflow từ lúc bị conflict đến lúc merge xong.| Giúp nhóm chốt được vị trí chính xác của Bottleneck là bước "đọc hiểu ý đồ logic của đoạn code bị conflict".|
+| Problem Statement | Hỗ trợ tinh chỉnh lại câu chữ cho phát biểu vấn đề cuối cùng, đảm bảo đủ các thành phần (Job Story, Actor, Impact).| Hoàn thiện Problem Statement rõ ràng, súc tích, phản ánh đúng trọng tâm vấn đề đưa vào báo cáo.|
+| Mức can thiệp AI | Thảo luận và đề xuất AI chỉ nên đóng vai trò phân tích, giải thích logic và gợi ý cách gộp (Human-in-the-loop), không tự động merge.| Giúp nhóm định hình giải pháp 3 Agent an toàn, tránh rủi ro hỏng build hoặc sai logic nghiệp vụ của dự án.|
+| Quyết định | Bỏ phiếu tán thành và thống nhất 100% với hướng đi cuối cùng của nhóm.| Nhóm đạt được sự đồng thuận tuyệt đối để kết thúc giai đoạn Discovery và sẵn sàng cho các bước tiếp theo.|
 
 ---
 
