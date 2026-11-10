@@ -16,7 +16,7 @@
 | 2 | Nguyễn Ngọc Bách | 2A202604108 | | bachnguyen2001 |
 | 3 | Lê Bá Nguyên | 2A202604100 | | 
 lbNGuyen06 |
-| 4 | Nguyễn Thiên Long | 2A202604095 | | tianlong-2609 |
+| 4 | Nguyễn Thiên Long | 2A202604095 |Thành viên | tianlong-2609 |
 | 5 | Nguyễn Văn Tuấn | 2A202604121 | | tuannguyen-cell |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
