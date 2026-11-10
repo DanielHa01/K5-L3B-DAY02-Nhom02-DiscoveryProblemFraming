@@ -59,3 +59,23 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Điều mình học được từ phần nhóm:**
 
 - Ý tưởng của mình chưa chắc đã chính xác hay hoàn thiện, nên nghe và lấy ý kiến của người khác.
+
+### Nguyễn Ngọc Bách -  2A202604108
+
+**Phần việc phụ trách:**
+
+- Điền thông tin trong group report
+- Tham gia thảo luận và quyết định
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Phản biện candidate để đưa ra solution đầy đủ hơn
+- Research các giải pháp sẵn có
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Phần 1 - 3 và giải pháp cuối
+
+**Điều mình học được từ phần nhóm:**
+
+- Ý tưởng của mình chưa chắc đã chính xác hay hoàn thiện, nên nghe và lấy ý kiến của người khác.
