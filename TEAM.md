@@ -13,10 +13,10 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Hà Phan Đại Dương | 2A202604119 | Team Lead | DanielHa01 |
-| 2 | Nguyễn Ngọc Bách | 2A202604108 | | bachnguyen2001 |
+| 2 | Nguyễn Ngọc Bách | 2A202604108 | Thành viên | bachnguyen2001 |
 | 3 | Lê Bá Nguyên | 2A202604100 |Thành viên | lbNGuyen06 |
 | 4 | Nguyễn Thiên Long | 2A202604095 |Thành viên | tianlong-2609 |
-| 5 | Nguyễn Văn Tuấn | 2A202604121 | | tuannguyen-cell |
+| 5 | Nguyễn Văn Tuấn | 2A202604121 | Thành viên | tuannguyen-cell |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -98,3 +98,25 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Điều mình học được từ phần nhóm:**
 
 - Problem tốt không chỉ tốn thời gian mà còn phải có phần việc quy tắc cố định khó làm được; cần đo baseline thật trước khi chốt metric
+
+
+### NguyenVanTuan-2A202604121
+
+**Phần việc phụ trách:**
+
+- Pitch Problem Card cá nhân. 
+- Tham gia thảo luận, chọn candidate và phản biện hướng multi-agent.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch card ; card vào shortlist, mình tiếp tục hỗ trợ candidate của nhóm.
+- Đặt câu hỏi "Giớ hạn của các agent là gì?" để nhóm tạo hướng giải quyết cho việc giới hạn quyền và có fall back khi làm viêc.
+- Góp ý cân nhắc mức Workflow trước khi chọn Agent.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Báo cáo cá nhân `report/individual/2A202604121_NguyenVanTuan.md` (mục 3, 4),các commit từ tuannguyen-cell.
+
+**Điều mình học được từ phần nhóm:**
+
+- Problem tốt cũng cần phải hiểu kĩ trước khi bắt đầu phân tích tránh việc chưa hiểu gì đã bắt đầu baseline.
