@@ -143,12 +143,12 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Prompt AI gợi ý thêm các nỗi đau (pain points) dựa trên lăng kính "Tốn thời gian".| Gợi ý được nhiều bối cảnh đa dạng mà sinh viên thường gặp (tìm tài liệu, ôn thi).| Đưa ra một số ý tưởng quá vĩ mô hoặc không có thật (ví dụ: AI tự động đi thi hộ, học hộ).| Bỏ qua các ý tưởng phi thực tế, chỉ chọn lọc và tinh chỉnh các pain thật như tìm phòng trọ, lọc thuật ngữ tiếng Anh.|
+| CP2 Problem Card | Nhờ AI đóng vai "Kẻ phản biện khó tính" để tìm lỗ hổng trong ý tưởng lọc thuật ngữ chuyên ngành.| Chỉ ra được điểm yếu chí mạng là AI dễ dịch sai ngữ cảnh nếu gặp công thức toán học hoặc ký hiệu lạ.| AI gợi ý giải pháp đao to búa lớn là xây dựng cả một hệ thống dịch toàn bộ văn bản dài 50 trang.| Không theo giải pháp của AI, tự giới hạn lại biên giới (boundary) là chỉ bóc tách các cụm từ tĩnh.|
+| CP4 Research | Nhờ AI tóm tắt các tính năng xử lý merge conflict của các IDE hiện hành (VSCode, GitLens).| Liệt kê đầy đủ và nhanh chóng các công cụ No-AI đang có trên thị trường.| AI chỉ liệt kê tính năng UI (hiển thị 3-way merge) mà không phân tích được nguyên nhân cốt lõi gây tốn thời gian.| Tự nhận định lại rằng: Tool UI tốt nhưng bottleneck thực sự nằm ở việc con người phải "đọc hiểu logic code lạ".|
+| CP5 Quy trình | Yêu cầu AI vẽ nháp Current Workflow cho một lập trình viên khi gặp Git merge conflict.| Phân chia các bước cơ bản khá logic từ lúc pull code đến lúc commit.| Các bước quá chung chung, không làm nổi bật được bước nào là bước thắt cổ chai (bottleneck) tốn thời gian nhất.| Gộp các thao tác gõ lệnh lại, tách riêng bước "Đọc hiểu ý đồ của nhánh code kia" làm Bottleneck chính.|
+| CP5–6 Problem Statement | Gọt giũa lại câu chữ cho Job Story để đảm bảo đúng format "Khi... tôi muốn... để...".| Giúp câu văn mượt mà, súc tích và đúng cấu trúc.|AI làm mất đi các con số định lượng về Impact (thời gian, tỷ lệ lỗi) mà nhóm đã chốt. | Thêm lại các từ khóa về mức độ nghiêm trọng và số liệu ước lượng rủi ro hỏng build vào phát biểu vấn đề.|
+| CP6 Mức can thiệp / quyết định |Hỏi AI về các mức độ can thiệp phù hợp (Automation vs Human-in-the-loop) cho bài toán code. | Đề xuất được mô hình Agent đóng vai trò như một người review code độc lập.|AI khuyên nên cho hệ thống tự động gộp (Auto-merge) 100% để tối ưu thời gian tuyệt đối. | Bác bỏ việc Auto-merge vì quá rủi ro cho logic nghiệp vụ. Chốt lại AI chỉ phân tích và đề xuất, Dev là người quyết định.|
 
 ---
 
@@ -157,21 +157,25 @@ Quy trình nháp hiện tại:
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Nghe bài nhóm khác mới thấy ý tưởng của mình hơi khó đo lường. Ý tưởng lọc phòng trọ của mình thực tế phết, nhưng không biết lấy data đâu để đánh giá. Bài Git Conflict của Tuấn thì rõ ràng hơn hẳn, lỗi phát là hỏng build, đo lường được ngay.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Có chứ. Lúc bàn vụ tìm phòng trọ, cả bọn toàn nhảy vào cãi nhau xem cào data Facebook kiểu gì, dùng model NLP nào. Xong ngớ người ra là còn chưa chốt được user kẹt ở khâu lướt tin hay đi xem phòng. Thế là phải phanh gấp, quay lại vạch cái luồng các bước ra trước.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Mình bỏ luôn ý tưởng bóc thuật ngữ tiếng Anh. Lúc bảo vệ thì hăng lắm, nhưng bị hỏi "tiêu chí nào đánh giá AI giải thích đúng ngữ cảnh" thì chịu. Tính chủ quan cao quá, khó làm nên mình nhượng bộ luôn.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Lúc research khá bất ngờ là mấy tool xịn như VSCode hay GitLens thực ra chỉ giải quyết được cái phần giao diện (chia màn hình cho dễ nhìn). Còn cái lõi tốn thời gian nhất là "đọc hiểu logic code lạ của người khác" thì chả có tool nào làm hộ cả.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Khó nhất là không bị lậm giải pháp vào câu chữ. Mình quen tay toàn viết kiểu "tôi muốn dùng AI đọc code", trong khi đúng ra phải viết mong muốn cốt lõi là "tôi muốn hiểu nhanh ý đồ đoạn code này".
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại, mình sẽ cãi gắt hơn ở đoạn cấp ngữ cảnh cho AI. Code liên quan đến cả project, nếu ném mỗi cái file bị conflict vào bắt AI hiểu thì dễ ảo giác và gợi ý sai logic ngay.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Bài toán xuất phát từ việc dev tốn quá nhiều thời gian dò ý đồ code của nhau khi bị merge conflict. Phân tích quy trình thì thấy kẹt nhất ở khâu đoán logic nhánh code lạ. Mục tiêu là giảm thời gian xử lý và giảm lỗi hỏng build, với giới hạn là chỉ phân tích file text chứ không tự động chạy test. Vì rủi ro hỏng hệ thống cao nên mức can thiệp bắt buộc là Human-in-the-loop (AI phân tích, người chốt cuối). Quyết định cuối cùng là thiết kế 3 Agent review chéo để tư vấn dev gộp code an toàn nhất.
 ---
 
 ## 7. Tài liệu tham khảo
+Báo cáo nhóm Nhóm 02: K5-L3B-DAY02-Nhom02-DiscoveryProblemFraming.
 
+Tài liệu hướng dẫn Resolve Merge Conflict của Git và VSCode Documentation.
+
+Các trao đổi trong phiên họp nhóm (CP3 - CP7).
 -
