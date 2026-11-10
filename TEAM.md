@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Hà Phan Đại Dương | 2A202604119 | Team Lead | DanielHa01 |
 | 2 | Nguyễn Ngọc Bách | 2A202604108 | | bachnguyen2001 |
-| 3 | Lê Bá Nguyên | 2A202604100 | | lbNGuyen06 |
+| 3 | Lê Bá Nguyên | 2A202604100 |Thành viên | lbNGuyen06 |
 | 4 | Nguyễn Thiên Long | 2A202604095 |Thành viên | tianlong-2609 |
 | 5 | Nguyễn Văn Tuấn | 2A202604121 | | tuannguyen-cell |
 
