@@ -1,14 +1,13 @@
 # Báo cáo nhóm — Day 02 Discovery & Problem Framing
 
-> Bản chung của nhóm, viết trên repo do nhóm trưởng fork. Không copy file này sang repo cá nhân.
-> Template chi tiết và prompt mẫu: [docs/01-worksheet.md](../../docs/01-worksheet.md). Bài mẫu: [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md).
+> Chủ đề nhóm: xử lý Git merge conflict trong quá trình cộng tác lập trình bằng mô hình 3 Agent. Các số liệu chưa có log/bấm giờ độc lập được ghi rõ là ước tính hoặc baseline cần kiểm chứng.
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
-- Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Tên nhóm: Nhóm 02
+- Thành viên: Hà Phan Đại Dương, Nguyễn Thiên Long, Lê Bá Nguyên, Nguyễn Ngọc Bách, Nguyễn Văn Tuấn.
+- Candidate problem được chọn: Khi nhiều thành viên cùng phát triển trên các branch, developer mất nhiều thời gian đọc và đối chiếu ý đồ của hai phía trong một merge conflict phức tạp, dễ hợp nhất sai logic và làm hỏng build.
+- Quyết định cuối: **Not Yet** — nhóm đã chốt kiến trúc 3 Agent để pilot, nhưng cần kiểm chứng trên các ca conflict thực tế trước khi triển khai rộng.
 
 ---
 
@@ -43,8 +42,6 @@
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
-Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
-
 ```text
 OUTCOME: Giảm thời gian và công sức thực hiện công việc,
 đồng thời đảm bảo chất lượng và độ chính xác.
@@ -72,7 +69,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 **Vì sao loại các candidate còn lại:** Các vấn đề kia 1 là đã có phương án khác, 2 là các thành viên không hiểu rõ vấn đề
 
-**Xử lý bất đồng (nếu có):**
+**Xử lý bất đồng:** nhóm không chọn theo số lượng agent. Nhóm quay lại quy trình, xác định bottleneck và chấm theo bảy tiêu chí. Sau phản biện, thống nhất chốt 3 Agent có HITL, giới hạn vòng lặp và không cho tự commit/push.
 
 ---
 
@@ -80,16 +77,14 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 ### 3.1. Assumption Map
 
-| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
+| # | Giả định | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
 | 1 | Agent có thể sửa và test được code | Feasibility | 5 | 5 | ✅ |
 | 2 | Agent đọc được context của code dựa trên ticket hay issue | Feasibility | 5 | 5 | ✅ |
 | 3 | Dev gặp khó khăn trong việc sửa conflict | Value | 3 | 3 | - |
 | 4 | Agent chạy theo vòng lặp có thể đốt token | Usability | 5 | 5 | ✅ |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định ưu tiên: tần suất và thời gian conflict; mức tin tưởng vào gợi ý; khả năng dùng diff/commit history/test làm input; và việc các tool có sẵn còn thiếu ngữ cảnh liên nhánh hay không.
 
 ### 3.2. Kiểm chứng
 
@@ -128,8 +123,6 @@ Tổng hợp:
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
 ```text
 [1 Dev phát hiện conflict khi merge/rebase]
 → [2 Đọc diff, lịch sử commit và ticket của hai nhánh]
@@ -150,8 +143,6 @@ Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
-
 ```text
 [1 AI BA: Nhận conflict, lấy và cung cấp ticket cho AI DEV và phạm vi được sửa]
 → [2 AI CICD: lấy diff ba phía (base/ours/theirs), commit; build/test từng nhánh trước sửa]
@@ -166,6 +157,14 @@ chạm bất kỳ giới hạn nào hoặc thiếu context → dừng, báo dev.
 PHƯƠNG ÁN QUAY VỀ: giữ nguyên nhánh gốc, bỏ bản sửa AI;
 dev trao đổi với tác giả và sửa thủ công theo quy trình hiện tại.
 ```
+
+**Vai trò 3 Agent:**
+
+- **DevOps Agent:** deploy phiên bản cần kiểm tra, chạy linter/unit/integration test, theo dõi log, phát hiện lỗi và thông báo kết quả cho BA Agent. Agent này không tự kết luận cách sửa.
+- **BA Agent:** nhận lỗi từ DevOps Agent, phân tích nguyên nhân ở mức yêu cầu/nghiệp vụ, đối chiếu diff/commit/spec và chuyển thành chỉ thị rõ ràng cho Dev Agent. Khi thiếu ngữ cảnh, BA Agent phải yêu cầu con người bổ sung.
+- **Dev Agent:** nhận chỉ thị, sửa code, chạy test cục bộ và gửi phiên bản mới cho DevOps Agent kiểm tra lại.
+
+Đây là vòng lặp **DevOps → BA → Dev → DevOps**. AI không được tự commit/push/approve PR, tự thay đổi test để làm test pass, hoặc tự quyết business logic khi không có bằng chứng. Developer/owner vẫn là người duyệt merge cuối cùng. Nếu vòng lặp quá số lần cho phép hoặc vẫn không xác định được nguyên nhân, hệ thống chuyển về 3-way merge thủ công và yêu cầu người phụ trách xử lý.
 
 ### 4.3. Before / after
 
@@ -269,7 +268,7 @@ Vì sao: Một đoạn code có nhiều cách hòa giải nhưng phải giữ ý
 
 ### 8.1. Bốn rủi ro
 
-| Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
+| Rủi ro | Câu hỏi | Mức độ rủi ro | Lý do / bằng chứng |
 |---|---|---|---|
 | **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | 10/10 từng sửa conflict và muốn nhanh hơn; chưa có tần suất, log thời gian hoặc bằng chứng sử dụng thực tế |
 | **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | TB | Dev quen diff/review nhưng 8/10 còn nghi ngờ; cần thử bản sửa kèm giải thích và đo công review |
@@ -302,4 +301,9 @@ Vì sao: Một đoạn code có nhiều cách hòa giải nhưng phải giữ ý
 
 ## 10. Tài liệu tham khảo
 
--
+- [Worksheet — hướng dẫn checkpoint](../../docs/01-worksheet.md)
+- [Bài deliverable mẫu](../../docs/02-deliverable-example.md)
+- [Framework quốc tế dùng trong lab](../../docs/03-international-frameworks.md)
+- [Git merge documentation](https://git-scm.com/docs/git-merge)
+- [GitHub: Resolving a merge conflict](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+- [VS Code: Resolve merge conflicts](https://code.visualstudio.com/docs/sourcecontrol/merge-conflicts)
