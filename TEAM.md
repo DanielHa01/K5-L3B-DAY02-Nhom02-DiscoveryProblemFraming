@@ -14,8 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Hà Phan Đại Dương | 2A202604119 | Team Lead | DanielHa01 |
 | 2 | Nguyễn Ngọc Bách | 2A202604108 | | bachnguyen2001 |
-| 3 | Lê Bá Nguyên | 2A202604100 | | 
-lbNGuyen06 |
+| 3 | Lê Bá Nguyên | 2A202604100 | | lbNGuyen06 |
 | 4 | Nguyễn Thiên Long | 2A202604095 |Thành viên | tianlong-2609 |
 | 5 | Nguyễn Văn Tuấn | 2A202604121 | | tuannguyen-cell |
 
@@ -79,3 +78,23 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Điều mình học được từ phần nhóm:**
 
 - Ý tưởng của mình chưa chắc đã chính xác hay hoàn thiện, nên nghe và lấy ý kiến của người khác.
+### LeBaNguyen-2A202604100
+
+**Phần việc phụ trách:**
+
+- Pitch Problem Card cá nhân (đối soát COD cuối ngày)
+- Tham gia thảo luận, chọn candidate và phản biện hướng multi-agent
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch card "Đối soát COD cuối ngày"; card không vào shortlist, mình chuyển sang hỗ trợ candidate của nhóm
+- Đặt câu hỏi "Các agent sẽ đảm nhận vai trò gì trong flow giải quyết conflict?" để nhóm gắn mỗi agent với một bước cụ thể
+- Góp ý cân nhắc mức Workflow trước khi chọn Agent
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Báo cáo cá nhân `report/individual/2A202604100_LeBaNguyen.md` (mục 3, 4), commit "Add individual report 2A202604100_LeBaNguyen"
+
+**Điều mình học được từ phần nhóm:**
+
+- Problem tốt không chỉ tốn thời gian mà còn phải có phần việc quy tắc cố định khó làm được; cần đo baseline thật trước khi chốt metric
