@@ -157,18 +157,25 @@ Quy trình nháp hiện tại:
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+
 Nghe bài nhóm khác mới thấy ý tưởng của mình hơi khó đo lường. Ý tưởng lọc phòng trọ của mình thực tế phết, nhưng không biết lấy data đâu để đánh giá. Bài Git Conflict của Tuấn thì rõ ràng hơn hẳn, lỗi phát là hỏng build, đo lường được ngay.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
 Có chứ. Lúc bàn vụ tìm phòng trọ, cả bọn toàn nhảy vào cãi nhau xem cào data Facebook kiểu gì, dùng model NLP nào. Xong ngớ người ra là còn chưa chốt được user kẹt ở khâu lướt tin hay đi xem phòng. Thế là phải phanh gấp, quay lại vạch cái luồng các bước ra trước.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
 Mình bỏ luôn ý tưởng bóc thuật ngữ tiếng Anh. Lúc bảo vệ thì hăng lắm, nhưng bị hỏi "tiêu chí nào đánh giá AI giải thích đúng ngữ cảnh" thì chịu. Tính chủ quan cao quá, khó làm nên mình nhượng bộ luôn.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
 Lúc research khá bất ngờ là mấy tool xịn như VSCode hay GitLens thực ra chỉ giải quyết được cái phần giao diện (chia màn hình cho dễ nhìn). Còn cái lõi tốn thời gian nhất là "đọc hiểu logic code lạ của người khác" thì chả có tool nào làm hộ cả.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
 Khó nhất là không bị lậm giải pháp vào câu chữ. Mình quen tay toàn viết kiểu "tôi muốn dùng AI đọc code", trong khi đúng ra phải viết mong muốn cốt lõi là "tôi muốn hiểu nhanh ý đồ đoạn code này".
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
 Nếu làm lại, mình sẽ cãi gắt hơn ở đoạn cấp ngữ cảnh cho AI. Code liên quan đến cả project, nếu ném mỗi cái file bị conflict vào bắt AI hiểu thì dễ ảo giác và gợi ý sai logic ngay.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
 Bài toán xuất phát từ việc dev tốn quá nhiều thời gian dò ý đồ code của nhau khi bị merge conflict. Phân tích quy trình thì thấy kẹt nhất ở khâu đoán logic nhánh code lạ. Mục tiêu là giảm thời gian xử lý và giảm lỗi hỏng build, với giới hạn là chỉ phân tích file text chứ không tự động chạy test. Vì rủi ro hỏng hệ thống cao nên mức can thiệp bắt buộc là Human-in-the-loop (AI phân tích, người chốt cuối). Quyết định cuối cùng là thiết kế 3 Agent review chéo để tư vấn dev gộp code an toàn nhất.
 ---
 
