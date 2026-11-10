@@ -10,7 +10,7 @@
 - MSSV: 2A202604095
 - Email trường (không bắt buộc, repo có thể để public):
 - Tên nhóm: Nhóm 02
-- Link repo nhóm:
+- Link repo nhóm: https://github.com/DanielHa01/K5-L3B-DAY02-Nhom02-DiscoveryProblemFraming
 
 ---
 
